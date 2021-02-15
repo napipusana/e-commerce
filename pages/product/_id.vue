@@ -106,13 +106,17 @@ export default {
           }
         }
       }
-      // this.$store.commit('cart/setCart', this.dataProduct)
     }
   }
 }
 </script>
 
 <style>
+.form-control {
+  width: 100% !important;
+  border: none;
+  height: none;
+}
 .iconMinusPlus {
   border-radius: 10px;
   color: white;
