@@ -24,13 +24,13 @@
           <span>
             Quanlity
           </span>
-          <i class="fa fa-plus iconMinusPlus cursor-pointer"  @click="plusAmout()"></i>
-          <span>{{ amount }}</span>
           <i class="fa fa-minus iconMinusPlus cursor-pointer" @click="minusAmout()"></i>
+          <span>{{ amount }}</span>
+          <i class="fa fa-plus iconMinusPlus cursor-pointer"  @click="plusAmout()"></i>
           <!-- <button type="button" class="btn btn-primary iconMinusPlus"> <i class="fa fa-minus iconMinusPlus cursor-pointer" @click="minusAmout()"></i></button> -->
         </div>
         <div class="my-2">
-          <b-button class="fs-12 px-5 py-2" variant="success" @click="addCart()">ADD TO CART</b-button>
+          <b-button class="fs-12 px-5 py-2" variant="success" @click="addCart()"><i class="fa fa-shopping-cart text-white"></i> ADD TO CART</b-button>
         </div>
         <!-- {{ this.$store.state.cart.cartItem }} -->
       </div>
@@ -113,6 +113,11 @@ export default {
 </script>
 
 <style>
+.form-control {
+  width: 100% !important;
+  border: none;
+  height: none;
+}
 .iconMinusPlus {
   border-radius: 10px;
   color: white;

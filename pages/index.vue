@@ -38,9 +38,6 @@
                   <div class="col-7 pl-0">
                     <small class="text-muted fs-11"></small>
                     <b-form-rating v-model="item.review.rating" readonly variant="warning" class="p-0" size="sm"></b-form-rating>
-                    <!-- <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star-o"></span>
-                    <span class="fa fa-star"></span> -->
                   </div>
                 </div>
               </div>
@@ -90,7 +87,6 @@ export default {
     },
     detailProduct(data) {
       this.$router.push('/product/' + data._id)
-      // alert(data._id)
     }
   }
 }
