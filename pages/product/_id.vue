@@ -106,7 +106,6 @@ export default {
           }
         }
       }
-      // this.$store.commit('cart/setCart', this.dataProduct)
     }
   }
 }
